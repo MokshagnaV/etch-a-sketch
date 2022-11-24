@@ -11,6 +11,14 @@
 <body>
     <h1>Etch-A-Sketch</h1>
     <div class="container"></div>
-    <button class="reset">Reset</button>
+    <div class="controls">
+        <button class="reset">Reset</button>
+        <div class="change-size">
+            <label for="size">
+                <input type="range" name="size" id="size" value="16" min="2" max="64" oninput="this.nextElementSibling.value = this.value">
+                <output>16 x 16</output>
+            </label>
+        </div>
+    </div>
 </body>
 </html>
